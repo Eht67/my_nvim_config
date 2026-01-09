@@ -24,13 +24,10 @@ vim.g.mapleader = " "
 -- change the eob tilde with dots
 vim.opt.fillchars:append({ eob = "." })
 
--- set current working directory as vim root
-vim.g.root_spec = { "cwd" }
-
 -- keybinding to open terminal
 vim.keymap.set("n", "T", ":botright split | :resize 20 | :terminal<CR>", {})
 
--- disable highlighting
+-- keybinding to disable highlighting
 vim.keymap.set("n", "<leader>h", ":noh<CR>", {})
 
 -- navigation speed keymaps
